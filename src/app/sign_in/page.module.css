@@ -1,0 +1,65 @@
+.signin {
+    padding: 10vh 10vw;
+    height: 100vh;
+}
+
+.pageTitle {
+    font-size: 25px;
+}
+.section {
+    margin-top: 5vh;
+    border: 2px rgb(255, 236, 199) dashed;
+    padding: 15px;
+    border-radius: 10px;
+    height: 25vh;
+}
+
+.inputBox {
+    height: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameInput {
+    width: 60vw;
+    font-size: 25px;
+    border: 0;
+    border-bottom: 2px solid rgb(136, 136, 136);
+}
+.nameInput:focus {
+    outline: 0;
+    border-bottom:  3px solid orange;
+}
+
+.labelBox {
+    height: 15vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label {
+    width: 60vw;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(255, 226, 172);
+    border-radius: 15px;
+}
+
+.doneBtn {
+    margin-top: 5vh;
+    background-color: white;
+    width: 25vw;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.doneBtn:active {
+    background-color: rgb(255, 212, 132);
+}
+
+.alert {
+    color:  red;
+}

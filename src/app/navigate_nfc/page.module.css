@@ -1,0 +1,24 @@
+
+.navigatePage {
+    padding: 10vh 10vw;
+    height: 100vh;
+}
+.main {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backBtn {
+    margin-top: 5vh;
+    background-color: white;
+    width: 25vw;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.backBtn:active {
+    background-color: rgb(255, 212, 132);
+}

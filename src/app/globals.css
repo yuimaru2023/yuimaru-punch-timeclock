@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+/* フォームを作成する際には、文字のサイズを16px以上にしましょう。
+16px以下の場合、iOSなど一部の環境では、入力時にズーム機能が自動で働きます。
+人によっては挙動が鬱陶しく感じることもありますので、16px以上にしておくことをおすすめします。 */
