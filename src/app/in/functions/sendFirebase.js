@@ -15,12 +15,11 @@ export default async function SendFireBase(workPlace,userName,check) {
     
     let d = new Date();
     let year = d.getFullYear();
-    let month = d.getMonth() + 1;
-    let day = d.getDate();
-    let hour = d.getHours()
-    let minute = d.getMinutes()
-    let seconds = d.getSeconds()
-    const time = year+":"+month+":"+day+"_"+hour+":"+minute+":"+seconds
+    let month = new String(d.getMonth() + 1).padStart(2, '0');
+    let day = new String(d.getDate()).padStart(2, '0');
+    let hour = new String(d.getHours()).padStart(2, '0');
+    let minute = new String(d.getMinutes()).padStart(2,'0')
+    const time = year+"/"+month+"/"+day+" "+hour+":"+minute
 
 
     const docRef = doc(db,`${workPlace}`,`${year}` ,`${month}` ,`${day}`)

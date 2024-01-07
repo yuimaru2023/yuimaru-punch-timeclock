@@ -38,7 +38,7 @@ export default function Home() {
                 <h3>    ③確認ページ     </h3>
             </Link>
 
-            <Link href="/administrator">
+            <Link href="/administrator/lastMonth">
                 <h3>    ④管理者ページ    </h3>
             </Link>
         </div>

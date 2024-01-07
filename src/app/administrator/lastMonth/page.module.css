@@ -1,0 +1,21 @@
+.tr ,.td ,.th{
+    border: solid 1px;  /* 枠線指定 */
+    padding: 10px;      /* 余白指定 */
+}
+
+.table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 0;
+    box-shadow: 2px 2px 4px rgba(150, 150, 150, 0.534);
+    background-color: rgb(151, 231, 255);
+}
+
+.btn:active {
+    background-color: rgb(114, 222, 255);
+}
