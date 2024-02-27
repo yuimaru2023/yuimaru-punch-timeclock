@@ -2,8 +2,7 @@ import GetEmployee from "../functions/getEmproyee";
 import css from "../page.module.css"
 
 //勤務時間の表を描画する
-export default async function MakeComeOutTable (p) {
-    const employee = await GetEmployee()
+export default async function MakeComeOutTable (p,employee) {
     let comeOutTable = []
     
     p.forEach(e => {
@@ -11,22 +10,30 @@ export default async function MakeComeOutTable (p) {
         //新しい日のデータが入ってくるごとに　let oneDay = []　で空にする
         let oneDay = []
         const fData = e.data()
-
+        
+        
         //既にemployeeがあいうえお順にしてあるから、その順番でfDataから探してくればよい
         employee.forEach((el)=>{
-
+            // console.log(fData[el][1] === undefined)
             if(Object.keys(fData).includes(el)){
                 const come = fData[el][0].split(" ")[1]
-                const out =  fData[el][1].split(" ")[1]
-                oneDay.push(<td className={css.td}>{come}～{out}</td>)
+                let out
+                if (fData[el][1] === undefined) {
+                    out = ""
+                } else {
+                    out =  fData[el][1].split(" ")[1]
+                }
+                oneDay.push(<td className={css.td} key={el}>{come}～{out}</td>)
             } else {
-                oneDay.push(<td className={css.td}></td>)
+                oneDay.push(<td className={css.td} key={el}></td>)
             }
 
         })
 
 
-        comeOutTable.push(<tr><td className={css.td}>{e.id}日</td>{oneDay}</tr>)
+        comeOutTable.push(<tr key={`day${e.id}`}>
+            <td className={css.td} key={`head_day${e.id}`}>{e.id}日</td>{oneDay}
+        </tr>)
     });
 
 

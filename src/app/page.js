@@ -1,23 +1,9 @@
-import Image from 'next/image'
 import styles from './page.module.css'
-
-import { doc,getDoc } from 'firebase/firestore';
 import Link from 'next/link';
-import db from './fireOrigin';
 
 
 
 export default function Home() {
-  
-  // Initialize Firebase
-  async function name(params) {
-    // const driverListPath = doc(db, "rikutaka", "2023")
-    // const driverList = await getDoc(driverListPath)
-    // console.log(driverList.data())
-  }
-
-  name()
-  console.log(1)
   
   return (
     <main className={styles.main}>
@@ -34,12 +20,8 @@ export default function Home() {
                 <h3>    ②出退勤ページ     </h3>
             </Link>
 
-            <Link  href="/check">
-                <h3>    ③確認ページ     </h3>
-            </Link>
-
-            <Link href="/administrator/lastMonth">
-                <h3>    ④管理者ページ    </h3>
+            <Link href="/administrator/itinoseki">
+                <h3>    ③管理者ページ    </h3>
             </Link>
         </div>
 

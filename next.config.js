@@ -6,7 +6,8 @@ const nextConfig = {
     output: 'export',
     // https://zenn.dev/dev_shun/articles/ace43099ba43ed
     // npm run build でnum run exportまでやってくれる
-    // swcMinify: true,
+    // swcMinify: false,
+    productionBrowserSourceMaps:true,
     // experimental: {
     //     appDir: true,
     // },

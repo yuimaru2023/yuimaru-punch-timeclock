@@ -1,16 +1,15 @@
 import db from "@/app/fireOrigin"
 import { doc, getDoc, setDoc, updateDoc, arrayUnion } from "firebase/firestore";
-import CheckPosition from "./checkPosition";
 
-export default async function SendFireBase(workPlace,userName,check) {
+export default async function SendFireBase(workPlace,userName) {
 
 
     if (workPlace==="" || userName === "") {
         // const checkPosition = true
-        console.log([{workPlace:workPlace},{userName:userName},{checkPosition:check}])
+        console.log([{workPlace:workPlace},{userName:userName}])
         return
     }
-    console.log([{workPlace:workPlace},{userName:userName},{checkPosition:check}])
+    console.log([{workPlace:workPlace},{userName:userName}])
 
     
     let d = new Date();

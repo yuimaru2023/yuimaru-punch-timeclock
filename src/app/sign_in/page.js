@@ -51,8 +51,9 @@ export default function Page() {
             <section className={s.section}>
                 <p className={s.sectionTitle}>働く場所</p>
                 <div className={s.labelBox}>
-                    <label className={s.label}>    <input type="radio" name="workPlace" value="rikutaka" onChange={(e) => setWorkPlace(e.target.value)}/>  陸前高田市    </label>
                     <label className={s.label}>    <input type="radio" name="workPlace" value="itinoseki"onChange={(e) => setWorkPlace(e.target.value)}/>  一関市    </label>
+                    <label className={s.label}>    <input type="radio" name="workPlace" value="ousyu"onChange={(e) => setWorkPlace(e.target.value)}/>  奥州市    </label>
+                    <label className={s.label}>    <input type="radio" name="workPlace" value="rikutaka" onChange={(e) => setWorkPlace(e.target.value)}/>  陸前高田市    </label>
                 </div>
             </section>
 
